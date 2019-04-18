@@ -1,7 +1,9 @@
-const pw = require('./credentials');
+// const pw = require('./credentials');
 const mongoose = require('mongoose');
-const dbURI = `mongodb+srv://bkwon94:${pw.pw}@cluster0-2ific.mongodb.net/fec`
+// const dbURI = `mongodb+srv://bkwon94:${pw.pw}@cluster0-2ific.mongodb.net/fec`
 // connect to database in mongo atlas
+
+const dbURI = 'mongodb://localhost:27017/sdcBrian';
 mongoose.connect(dbURI, { useNewUrlParser: true});
 const db = mongoose.connection;
 

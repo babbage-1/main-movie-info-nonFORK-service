@@ -40,11 +40,12 @@ class App extends React.Component {
     // grabs pathname i.e.) /1/ and then parses it to number 1
     let idRoute = window.location.pathname;
     let parsedId = Number(idRoute.split('').filter(char => char !== '/').join(''));
+    console.log('parseId in GET MOVIE POSTER', parsedId);
 
-    fetch(`http://localhost:2000/movies/poster?movieID=${parsedId || 1}`)
+    fetch(`/info/${parsedId || 1}/poster`)
       .then(res => res.json())
-      .then(
-        result => {
+      .then((result) => {
+        console.log('result from moviePoster', result);
         this.setState({
           poster: result,
         });
@@ -58,11 +59,13 @@ class App extends React.Component {
   getMovieInfo(id) {
     let idRoute = window.location.pathname;
     let parsedId = Number(idRoute.split('').filter(char => char !== '/').join(''));
+    console.log('parseId in GET MOVIE INFO', parsedId)
   // currently doing localhost:2000/3 etc will not display properly
-    fetch(`http://localhost:2000/movies?movieID=${parsedId || 1}`)
+    fetch(`/info/${parsedId || 1}`)
       .then(res => res.json())
       .then(
         result => {
+          console.log('result from movie info', result)
           this.setState({
             movieInfo: result,
           });
@@ -141,6 +144,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('am I rendering')
     // move App container component here to utilize state
     // if 'GO' clicked: make container slightly bigger
     // refactor if possible to avoid using styled comps inside render
