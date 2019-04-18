@@ -41,7 +41,7 @@ class App extends React.Component {
     let idRoute = window.location.pathname;
     let parsedId = Number(idRoute.split('').filter(char => char !== '/').join(''));
     console.log('parseId in GET MOVIE POSTER', parsedId);
-
+    //CHANGED ENDPOINT
     fetch(`/info/${parsedId || 1}/poster`)
       .then(res => res.json())
       .then((result) => {
@@ -61,6 +61,7 @@ class App extends React.Component {
     let parsedId = Number(idRoute.split('').filter(char => char !== '/').join(''));
     console.log('parseId in GET MOVIE INFO', parsedId)
   // currently doing localhost:2000/3 etc will not display properly
+    //CHANGED ENDPOINT
     fetch(`/info/${parsedId || 1}`)
       .then(res => res.json())
       .then(
