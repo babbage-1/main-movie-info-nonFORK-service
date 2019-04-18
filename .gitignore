@@ -30,7 +30,7 @@ coverage
 #
 db/credentials.js
 # Compiled Dirs (http://nodejs.org/api/addons.html)
-build/
+build/bundle.js
 dist/
 
 # Elastic Beanstalk Files
