@@ -41,3 +41,23 @@ app.get('/info/:id/poster', (req, res) => {
     }
   })
 })
+
+app.get('/info/:id/post', (req, res) => {
+  console.log('CREATE new item');
+
+  res.status(200).send('Create New Item from POST');
+})
+
+
+app.get('/info/:id/put', (req, res) => {
+  console.log('UPDATE old item');
+
+  res.status(200).send('Update New Item from PUT');
+})
+
+app.get('/info/:id/delete', (req, res) => {
+  console.log('DELETE new item');
+
+  res.status(200).send('DELETE New Item from DELETE');
+})
+
