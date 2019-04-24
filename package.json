@@ -20,7 +20,7 @@
     "write:postgresql": "node --max-old-space-size=4096 ./data_generator/writePGSQL.js",
     "write:cassandra": "node --max-old-space-size=4096 ./data_generator/writeCassandra.js",
     "seed:postgresql": "node --max-old-space-size=4096 ./database_seeder/seedPostgreSQL.js",
-    "seed:cassandra": "cqlsh 127.0.0.1 9042 -f ./cassandra.cql",
+    "seed:cassandra": "cqlsh 127.0.0.1 9042 -f ./database_seeder/cassandra.cql",
     "seed:cassandraSample": "cqlsh 127.0.0.1 9042 -f ./database_seeder/cassandra-sample.cql"
   },
   "dependencies": {

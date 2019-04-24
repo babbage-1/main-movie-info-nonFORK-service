@@ -55,7 +55,7 @@ const writeCsv = async (dbString) => {
     console.time(`write ${dbString} data`);
     const imgUrlList = await generateImgList();
 
-    writer.pipe(fs.createWriteStream(`sdc-${dbString}-data.csv`));
+    writer.pipe(fs.createWriteStream(`./database_seeder/sdc-${dbString}-data.csv`));
     for (let i = 1; i <= 10000000; i += 1) {
       const name = faker.lorem.words();
       const genre = genreGen();
