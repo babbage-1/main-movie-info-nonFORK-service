@@ -16,4 +16,4 @@ CREATE TABLE IF NOT EXISTS testmovieInfo (
     PRIMARY KEY ((releaseYear), id)
   );
 
-COPY testmovieinfo(id, name, genre, score, runtime, rating, releaseDay, releaseMonth, releaseYear, image) FROM '~/code/my_own/Capston_Projects/sdc/andrew-sdc-data-generation/sdc-sample-cassandra-data.csv' WITH HEADER = TRUE AND NUMPROCESSES = 16 AND CHUNKSIZE = 1000 AND MAXBATCHSIZE = 15;
+COPY testmovieinfo(id, name, genre, score, runtime, rating, releaseDay, releaseMonth, releaseYear, image) FROM './database_seeder/sdc-sample-cassandra-data.csv' WITH HEADER = TRUE AND NUMPROCESSES = 16 AND CHUNKSIZE = 1000 AND MAXBATCHSIZE = 15;
