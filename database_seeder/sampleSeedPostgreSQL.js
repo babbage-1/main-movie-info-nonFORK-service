@@ -3,7 +3,7 @@ const path = require('path');
 const pool = new Pool({
   user: 'postgres',
   host: '127.0.0.1',
-  database: 'sdcandrew',
+  database: 'testsdc',
   password: '',
   port: 5432,
 });
@@ -33,7 +33,7 @@ const seedPostgres = async () => {
     console.log('writing to database!');
 
 
-    const copyPath = path.join(__dirname, './sdc-postgresql-data.csv');
+    const copyPath = path.join(__dirname, './sdc-sample-postgresql-data.csv');
     await client.query(`
       COPY MovieInfo FROM '${copyPath}' WITH (FORMAT CSV, HEADER);
     `);
