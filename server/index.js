@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const db = require('../db/index.js');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const db = require('../db/index.js');
 const PORT = process.env.PORT || 2000;
 // CHANGED
 app.use('/:id', express.static('client/dist'));
