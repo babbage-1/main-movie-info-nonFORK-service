@@ -91,5 +91,5 @@ describe('Cassandra DBMS Benchmarking with 10M data points', () => {
     } finally {
       await client.shutdown();
     }
-  });
+  }, 10000);
 });

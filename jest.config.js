@@ -33,6 +33,12 @@ module.exports = {
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
 
   // Indicates whether each individual test should be reported during the run
-  verbose: true,
+  verbose: false,
+
+  globals: {
+    window: true,
+  },
+
+  // setupFiles: ['../node_modules/regenerator-runtime/runtime'],
 
 };
