@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import {MovieInfo, InfoList, InfoContainer, StarRatingContainer, ReleaseDate} from '../MovieInfo';
-;
 
 
 describe("MovieInfo component", () => {
