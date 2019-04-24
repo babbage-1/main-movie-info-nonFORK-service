@@ -1,8 +1,8 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
+  "name": "andrew-sdc",
+  "version": "1.0.0",
+  "description": "sdc",
+  "author": "Andrew Chung",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
@@ -22,7 +22,7 @@
     "cors": "^2.8.5",
     "enzyme-to-json": "^3.3.5",
     "express": "^4.16.4",
-    "grun": "^0.2.0",
+    "grunt": "^1.0.4",
     "grunt-aws-s3": "^2.0.0",
     "isomorphic-fetch": "^2.2.1",
     "jest-environment-enzyme": "^7.0.2",
