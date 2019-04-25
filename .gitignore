@@ -37,3 +37,10 @@ client/dist/bundle.js
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# For data generation and DBMS Benchmarking
+s3Config.json
+*.csv
+*.env
+
+

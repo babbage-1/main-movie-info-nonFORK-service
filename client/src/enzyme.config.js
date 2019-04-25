@@ -1,4 +1,5 @@
-import { configure } from 'enzyme';
+/* eslint-disable import/no-extraneous-dependencies */
+import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-configure({ adapter: new Adapter() });
+Enzyme.configure({ adapter: new Adapter() });

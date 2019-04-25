@@ -35,4 +35,10 @@ module.exports = {
   // Indicates whether each individual test should be reported during the run
   verbose: false,
 
+  globals: {
+    window: true,
+  },
+
+  // setupFiles: ['../node_modules/regenerator-runtime/runtime'],
+
 };
