@@ -10,8 +10,6 @@ const params = {
   MaxKeys: 3,
 };
 
-console.log(process.env.IMG_HOST);
-
 const listAllObjects = async () => {
   let imgUrlArray = [];
   try {
@@ -23,7 +21,6 @@ const listAllObjects = async () => {
           key = `${key.slice(0, i)}+${key.slice(i + 1)}`;
         }
       }
-      console.log(process.env.IMG_HOST);
       const url = `${process.env.IMG_HOST}${key}`;
       return url;
     });
