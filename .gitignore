@@ -41,6 +41,6 @@ client/dist/bundle.js
 # For data generation and DBMS Benchmarking
 s3Config.json
 *.csv
-.env
+*.env
 
 
