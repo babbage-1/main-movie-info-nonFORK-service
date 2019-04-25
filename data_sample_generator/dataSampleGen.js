@@ -55,7 +55,7 @@ const writeSampleCsv = async (dbString) => {
     const imgUrlList = await generateSampleImgList();
 
     writer.pipe(fs.createWriteStream(`./database_seeder/sdc-sample-${dbString}-data.csv`));
-    for (let i = 1; i <= 1000000; i += 1) {
+    for (let i = 1; i <= 100000; i += 1) {
       const name = faker.lorem.words();
       const genre = genreGen();
       const score = faker.random.number({
